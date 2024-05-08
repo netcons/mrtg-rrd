@@ -1,0 +1,14 @@
+iRunAsDaemon: yes
+NoDetach: yes
+LogFormat: rrdtool
+Interval: 1
+HtmlDir: /var/www/mrtg
+ImageDir: /var/www/mrtg
+LogDir: /var/lib/mrtg
+Options[_]: bits,growright,nolegend,nobanner
+
+Target[localhost_eth0]: \eth0:public@localhost:
+SetEnv[localhost_eth0]: MRTG_INT_IP="192.168.1.1" MRTG_INT_DESCR="eth0"
+MaxBytes[localhost_eth0]: 1024000000
+Title[localhost_eth0]: Traffic Analysis for eth0 -- localhost
+PageTop[localhost_eth0]: <h1>Traffic Analysis for eth0 -- localhost</h1>

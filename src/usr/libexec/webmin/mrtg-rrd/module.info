@@ -1,0 +1,7 @@
+os_support=*-linux
+version=0.9
+longdesc=The Multi Router Traffic Grapher (MRTG) is an open source tool used to monitor the traffic load on network links.
+name=mrtg-rrd
+desc=Multi Router Traffic Grapher
+category=net
+depends=1.960
