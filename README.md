@@ -2,7 +2,7 @@
 
 A FastCGI script for displaying MRTG graphs from data in RRD format.
 
-Available via the [Webmin](http://www.webmin.com/) GUI interface.
+You can do this by using the web interface [Webmin](http://www.webmin.com/)
 
 Written by Jan "Yenya" Kasprzak <kas@fi.muni.cz> and is distributed under the terms of GNU GPL.
 
