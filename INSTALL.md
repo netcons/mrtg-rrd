@@ -10,5 +10,14 @@ dnf install mrtg rrdtool rrdtool-perl
 cp /usr/share/doc/mrtg-rrd/mrtg.cfg /etc/mrtg/mrtg.cfg
 systemctl enable mrtg --now 
 
-dnf install mrtg-rrd
+cd /tmp
+curl -s https://api.github.com/repos/netcons/mrtg-rrd/releases \
+| grep "browser_download_url.*.el9.*rpm" \
+| cut -d : -f 2,3 \
+| tr -d \" \
+| wget -qi -
+
+dnf install mrtg-rrd-*.el9.noarch.rpm
+
+rm mrtg-rrd-*.el9.noarch.rpm
 ```
